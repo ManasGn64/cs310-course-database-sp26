@@ -13,6 +13,7 @@ public class DAOProperties {
     static {
         
         InputStream file = DAOProperties.class.getResourceAsStream(PROPERTIES_FILE);
+        System.out.println("Loading properties stream = " + file);
 
         try {
             PROPERTIES.load(file);
